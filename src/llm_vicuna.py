@@ -21,7 +21,7 @@ def download_model():
     # Match what FastChat expects
     # https://github.com/thisserand/FastChat/blob/4a57c928a906705404eae06f7a44b4da45828487/download-model.py#L203
     output_folder = f"{'_'.join(MODEL_NAME.split('/')[-2:])}"
-
+    print("Downloading model...")
     snapshot_download(
         local_dir=Path("/FastChat", "models", output_folder),
         repo_id=MODEL_NAME,
