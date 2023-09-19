@@ -2,5 +2,15 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
   },
+  	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"GitHub.copilot"
+			]
+		}
+	},
   "postCreateCommand": "pip3 install --user modal && pip3 install --user -r requirements.txt"
 }
